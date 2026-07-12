@@ -3,7 +3,7 @@ package com.khazoda.bronze;
 import com.khazoda.bronze.loot.LootTableModificationFabric;
 import com.khazoda.bronze.loot.TrowelConversionReloadFabric;
 import com.khazoda.bronze.registry.MainRegistry;
-import com.khazoda.baseline.KhazRegFabric;
+import com.khazoda.core.reg.KhazRegFabric;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;

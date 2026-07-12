@@ -1,8 +1,8 @@
 package com.khazoda.bronze;
 
-import com.khazoda.baseline.KhazConfigSyncNeoForge;
-import com.khazoda.baseline.KhazRegNeoForge;
 import com.khazoda.bronze.registry.MainRegistry;
+import com.khazoda.core.config.KhazConfigSyncNeoForge;
+import com.khazoda.core.reg.KhazRegNeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;

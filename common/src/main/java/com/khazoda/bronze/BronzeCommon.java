@@ -1,7 +1,7 @@
 package com.khazoda.bronze;
 
 import com.khazoda.bronze.platform.Services;
-import com.khazoda.baseline.KhazConfig;
+import com.khazoda.core.config.KhazConfig;
 
 public final class BronzeCommon {
   public static final KhazConfig.Entry<Integer> SICKLE_HARVEST_RANGE = KhazConfig.integer("sickle_harvest_range", 2, 1, 12, "How far the sickle reaches when harvesting crops.");

@@ -1,6 +1,6 @@
 package com.khazoda.bronze;
 
-import com.khazoda.baseline.KhazConfigSync;
+import com.khazoda.core.config.KhazConfigSync;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;

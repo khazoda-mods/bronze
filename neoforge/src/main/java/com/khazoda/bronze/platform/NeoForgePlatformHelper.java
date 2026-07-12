@@ -2,8 +2,8 @@ package com.khazoda.bronze.platform;
 
 import com.khazoda.bronze.Constants;
 import com.khazoda.bronze.platform.services.IPlatformHelper;
-import com.khazoda.baseline.KhazConfig;
-import com.khazoda.baseline.KhazConfigSyncNeoForge;
+import com.khazoda.core.config.KhazConfig;
+import com.khazoda.core.config.KhazConfigSyncNeoForge;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 import net.neoforged.fml.loading.FMLPaths;

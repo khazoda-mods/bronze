@@ -1,8 +1,5 @@
 package com.khazoda.bronze.registry;
 
-import com.khazoda.baseline.KhazReg;
-import com.khazoda.baseline.KhazReg.BlockEntry;
-import com.khazoda.baseline.KhazReg.Entry;
 import com.khazoda.bronze.Constants;
 import com.khazoda.bronze.block.*;
 import com.khazoda.bronze.item.FarmersDelightKnife;
@@ -11,6 +8,9 @@ import com.khazoda.bronze.item.Trowel;
 import com.khazoda.bronze.material.BronzeMaterial;
 import com.khazoda.bronze.material.TinMaterial;
 import com.khazoda.bronze.platform.Services;
+import com.khazoda.core.reg.KhazReg;
+import com.khazoda.core.reg.KhazReg.BlockEntry;
+import com.khazoda.core.reg.KhazReg.Entry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvent;

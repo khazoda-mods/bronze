@@ -15,7 +15,6 @@
     "issues": "${mod_issues}"
   },
   "license": "${license}",
-  "accessWidener": "${mod_id}.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [

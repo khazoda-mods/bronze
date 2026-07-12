@@ -2,7 +2,7 @@ package com.khazoda.bronze.platform;
 
 import com.khazoda.bronze.BronzeCommon;
 import com.khazoda.bronze.Constants;
-import com.khazoda.baseline.KhazConfigSyncFabric;
+import com.khazoda.core.config.KhazConfigSyncFabric;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;

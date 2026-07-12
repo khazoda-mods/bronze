@@ -2,8 +2,8 @@ package com.khazoda.bronze.platform;
 
 import com.khazoda.bronze.Constants;
 import com.khazoda.bronze.platform.services.IPlatformHelper;
-import com.khazoda.baseline.KhazConfigSyncFabric;
-import com.khazoda.baseline.KhazConfig;
+import com.khazoda.core.config.KhazConfig;
+import com.khazoda.core.config.KhazConfigSyncFabric;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Path;
