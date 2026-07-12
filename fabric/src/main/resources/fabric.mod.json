@@ -1,52 +1,52 @@
 {
-    "schemaVersion": 1,
-    "id": "${mod_id}",
-    "version": "${version}",
-    "name": "${mod_name}",
-    "description": "${description}",
-    "icon": "assets/${mod_id}/icon.png",
-    "authors": [
-        "${mod_author}"
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "icon": "assets/${mod_id}/icon.png",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_sources}",
+    "issues": "${mod_issues}"
+  },
+  "license": "${license}",
+  "accessWidener": "${mod_id}.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.khazoda.bronze.BronzeFabric"
     ],
-    "contributors": [],
-    "contact": {
-        "homepage": "${mod_homepage}",
-        "sources": "${mod_sources}",
-        "issues": "${mod_issues}"
-    },
-    "license": "${license}",
-    "accessWidener": "${mod_id}.accesswidener",
-    "environment": "*",
-    "entrypoints": {
-        "main": [
-            "com.khazoda.bronze.BronzeFabric"
-        ],
-        "client": [
-            "com.khazoda.bronze.platform.FabricConfigSyncClient"
-        ],
-        "fabric-datagen": [
-            "com.khazoda.bronze.datagen.BronzeModDataGenerator"
-        ]
-    },
-    "mixins": [
-        "${mod_id}.mixins.json", "${mod_id}.fabric.mixins.json"
+    "client": [
+      "com.khazoda.bronze.platform.FabricConfigSyncClient"
     ],
-    "depends": {
-        "fabricloader": ">=${fabric_loader_version}",
-        "fabric-api": "*",
-        "minecraft": "~${minecraft_version}",
-        "java": ">=${java_version}",
-        "khazodacore": ">=${khazodacore_version}"
+    "fabric-datagen": [
+      "com.khazoda.bronze.datagen.BronzeModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json", "${mod_id}.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=${java_version}",
+    "khazodacore": ">=${khazodacore_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.com/invite/vEZUkSxwR9"
+      }
     },
-    "custom": {
-        "modmenu": {
-            "links": {
-                "modmenu.discord": "https://discord.com/invite/vEZUkSxwR9"
-            }
-        },
-        "catalogue": {
-            "banner": "assets/${mod_id}/banner.png",
-            "background": "assets/${mod_id}/background.png"
-        }
+    "catalogue": {
+      "banner": "assets/${mod_id}/banner.png",
+      "background": "assets/${mod_id}/background.png"
     }
+  }
 }
