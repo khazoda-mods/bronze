@@ -3,9 +3,12 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
+dependencies {
+    implementation "com.khazoda:khazodacore-neoforge:${khazodacore_version}"
+}
+
 neoForge {
     version = neoforge_version
-    // Automatically enable neoforge AccessTransformers if the file exists
     def at = project(':common').file('src/main/resources/META-INF/accesstransformer.cfg')
     if (at.exists()) {
         accessTransformers.from(at.absolutePath)
@@ -22,8 +25,6 @@ neoForge {
         data {
             clientData()
             gameDirectory = this.mkdir(this.file("runs/data"))
-            // DataGen can be run by - "./gradlew :neoforge:runData" in Terminal.
-            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
         }
         server {
@@ -62,7 +63,6 @@ tasks.named('javadocJar') {
     destinationDirectory.set(exportRoot.dir('javadoc'))
 }
 
-// Implement mcgradleconventions loader attribute
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
 ['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
     configurations.named("$variant") {
