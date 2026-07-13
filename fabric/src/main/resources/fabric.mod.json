@@ -20,9 +20,6 @@
     "main": [
       "com.khazoda.bronze.BronzeFabric"
     ],
-    "client": [
-      "com.khazoda.bronze.platform.FabricConfigSyncClient"
-    ],
     "fabric-datagen": [
       "com.khazoda.bronze.datagen.BronzeModDataGenerator"
     ]

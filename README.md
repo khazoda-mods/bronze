@@ -1,4 +1,4 @@
-![bronze banner](/common/src/main/resources/assets/bronze/banner.png)
+![bronze banner](https://cdn.modrinth.com/data/cached_images/91e53d8a1afce20bfde2054d2f4dea4e2c4c91a4.png)
 
 <h1 align="center" style="display: block; margin-bottom: 10px; text-align: center;">
   <div>
