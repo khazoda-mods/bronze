@@ -41,17 +41,17 @@ fabricApi.configureDataGeneration {
 def exportRoot = rootProject.layout.projectDirectory.dir('export')
 
 tasks.named('jar') {
-    archiveFileName.set("${mod_id}-fabric-${project.version}+${minecraft_version}.jar")
+    archiveFileName.set("${mod_id}-fabric-${project.version}.jar")
     destinationDirectory.set(exportRoot)
 }
 
 tasks.named('sourcesJar') {
-    archiveFileName.set("${mod_id}-fabric-${project.version}+${minecraft_version}-sources.jar")
+    archiveFileName.set("${mod_id}-fabric-${project.version}-sources.jar")
     destinationDirectory.set(exportRoot.dir('source'))
 }
 
 tasks.named('javadocJar') {
-    archiveFileName.set("${mod_id}-fabric-${project.version}+${minecraft_version}-javadoc.jar")
+    archiveFileName.set("${mod_id}-fabric-${project.version}-javadoc.jar")
     destinationDirectory.set(exportRoot.dir('javadoc'))
 }
 
