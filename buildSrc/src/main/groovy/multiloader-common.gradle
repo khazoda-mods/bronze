@@ -14,6 +14,8 @@ java {
 }
 
 repositories {
+    /* always temporarily comment out next line if building jars */
+    mavenLocal()
     mavenCentral()
     exclusiveContent {
         forRepository {
