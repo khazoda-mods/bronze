@@ -78,12 +78,13 @@ public class LootTables {
     LOOT_TABLE_CONFIGS.put(WOODLAND_MANSION, new LootConfig(List.of(MainRegistry.BRONZE_INGOT.get()), false, false));
   }
 
-  public static void modifyLootTable(Identifier id, LootTable.Builder tableBuilder) {
+  public static boolean modifyLootTable(Identifier id, LootTable.Builder tableBuilder) {
     ResourceKey<LootTable> key = ResourceKey.create(LOOT_TABLE, id);
     LootConfig config = LOOT_TABLE_CONFIGS.get(key);
-    if (config != null) {
-      addLootToTable(config, tableBuilder);
-    }
+    if (config == null) return false;
+
+    addLootToTable(config, tableBuilder);
+    return true;
   }
 
   private static void addLootToTable(LootConfig config, LootTable.Builder tableBuilder) {

@@ -19,7 +19,7 @@ public final class LootTableModificationNeoForge {
     if (!"minecraft".equals(event.getName().getNamespace())) return;
 
     LootTable.Builder builder = LootTable.lootTable();
-    LootTables.modifyLootTable(event.getName(), builder);
+    if (!LootTables.modifyLootTable(event.getName(), builder)) return;
 
     LootPool pool = LootPool.lootPool()
         .add(NestedLootTable.inlineLootTable(builder.build()))
