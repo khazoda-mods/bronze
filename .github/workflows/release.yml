@@ -1,0 +1,38 @@
+name: Create GitHub Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+
+      - uses: gradle/actions/setup-gradle@v6
+
+      - name: Get release tag
+        id: release
+        shell: bash
+        run: |
+          version="$(sed -n 's/^version=//p' gradle.properties)"
+          test -n "$version"
+          echo "tag=v$version" >> "$GITHUB_OUTPUT"
+
+      - name: Build
+        run: ./gradlew build
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: gh release create "$RELEASE_TAG" export/*.jar --target "$GITHUB_SHA" --title "$RELEASE_TAG" --generate-notes
