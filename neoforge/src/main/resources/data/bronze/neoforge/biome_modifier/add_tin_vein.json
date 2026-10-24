@@ -1,0 +1,11 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "bronze:generate_tin_ore"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "bronze:tin_vein",
+  "step": "underground_ores"
+}

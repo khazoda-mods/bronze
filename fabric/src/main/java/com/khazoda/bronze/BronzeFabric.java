@@ -19,6 +19,7 @@ public class BronzeFabric implements ModInitializer {
     if (BronzeCommon.CONFIG.getLocal(BronzeCommon.GENERATE_TIN_ORE)) {
       BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, MainRegistry.TIN_ORE_PLACED_KEY);
       BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, MainRegistry.TIN_ORE_SMALL_PLACED_KEY);
+      BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, MainRegistry.TIN_VEIN_PLACED_KEY);
     }
     CreativeModeTabEvents.modifyOutputEvent(MainRegistry.BRONZE_TAB.key()).register(output -> MainRegistry.addMainTabItems(output::accept));
     LootTableModificationFabric.init();

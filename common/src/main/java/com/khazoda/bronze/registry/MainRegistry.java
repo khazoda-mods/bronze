@@ -109,6 +109,7 @@ public final class MainRegistry {
    */
   public static final ResourceKey<PlacedFeature> TIN_ORE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, Constants.ID("ore_tin"));
   public static final ResourceKey<PlacedFeature> TIN_ORE_SMALL_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, Constants.ID("ore_tin_small"));
+  public static final ResourceKey<PlacedFeature> TIN_VEIN_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, Constants.ID("tin_vein"));
 
   /**
    * ==========[ Tabs ]==========
